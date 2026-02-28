@@ -1,0 +1,54 @@
+#include <stdio.h>
+
+/*
+    Desafio: Movimentação das Peças de Xadrez
+    Nível: Novato
+*/
+
+int main() {
+
+    // =========================
+    // MOVIMENTO DA TORRE (FOR)
+    // =========================
+
+    int casasTorre = 5;
+
+    printf("Movimento da Torre:\n");
+
+    for(int i = 0; i < casasTorre; i++) {
+        printf("Direita\n");
+    }
+
+
+    // =========================
+    // MOVIMENTO DO BISPO (WHILE)
+    // =========================
+
+    int casasBispo = 5;
+    int contadorBispo = 0;
+
+    printf("\nMovimento do Bispo:\n");
+
+    while(contadorBispo < casasBispo) {
+        printf("Cima, Direita\n");
+        contadorBispo++;
+    }
+
+
+    // =========================
+    // MOVIMENTO DA RAINHA (DO-WHILE)
+    // =========================
+
+    int casasRainha = 8;
+    int contadorRainha = 0;
+
+    printf("\nMovimento da Rainha:\n");
+
+    do {
+        printf("Esquerda\n");
+        contadorRainha++;
+    } while(contadorRainha < casasRainha);
+
+
+    return 0;
+}
